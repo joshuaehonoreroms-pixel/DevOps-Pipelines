@@ -10,15 +10,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # Use v4 for better stability
+        uses: actions/checkout@v5
 
       - name: Set up Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v3
         with:
-          node-version: 18  # Updated to LTS version
+          node-version: 16
 
       - name: Install dependencies
-        run: npm ci  # Use npm ci for cleaner installs in CI
+        run: npm install
 
       - name: Run tests
         run: npm test
