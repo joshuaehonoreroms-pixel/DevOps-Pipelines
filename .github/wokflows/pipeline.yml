@@ -1,4 +1,4 @@
-name: CI Pipeline
+name: CI pipeline
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
         with:
           node-version: 16
 
-      - name: Install dependencies
+      - name: Install Dependencies
         run: npm install
 
       - name: Run tests
