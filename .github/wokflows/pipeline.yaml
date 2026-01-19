@@ -2,7 +2,7 @@ Name: CI Pipeline
 
 On:
   Push:
-    Branch: { main }
+    Branch: [ main ]
 
 jobs:
   build:
